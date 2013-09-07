@@ -2,22 +2,15 @@ package com.tastyplanner.Activities;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.FrameLayout;
 
 import com.tastyplanner.R;
-import com.tastyplanner.R.id;
-import com.tastyplanner.R.layout;
 import com.tastyplanner.objects.DataSingleton;
 import com.viewpagerindicator.TabPageIndicator;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends android.support.v4.app.FragmentActivity {
     private static final String[] CONTENT = new String[] { "Meals", "List" };
 
     
