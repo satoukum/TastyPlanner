@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightgrey" >
+
+    <FrameLayout
+        android:id="@+id/tutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tutorial3" >
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/mealsListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        android:paddingTop="5dp" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_bar_meals" />
+
+</RelativeLayout>

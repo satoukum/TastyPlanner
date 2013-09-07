@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrlView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="51dp" >
+        
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        
+            <ImageView
+            	android:id="@+id/recipeImg"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:background="@null"
+            	android:layout_gravity="center_horizontal" 
+            	android:src="@drawable/recipe_cappuccinochocolatecupcakes" />
+            
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ready in 1 Hour and 10 minutes, Servings: 8"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textSize="15dip" />
+
+            <Button
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="Ingredients"
+                android:drawableRight="@drawable/icon_edit_white"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text" 
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+                />
+
+            <Button
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="Directions"
+                android:drawableRight="@drawable/icon_edit_white"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="Nutritional Information"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />                
+                 
+            <Button
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="Read User Reviews"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+	</LinearLayout>
+    </ScrollView>
+    
+    <include 
+        android:id="@+id/topbar"
+        android:layout_width="wrap_content" 
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_bar" />
+    
+    <TextView
+        android:id="@+id/planmeal"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/topbar"
+        android:background="@color/pressed_red"
+        android:textColor="@color/white"
+        android:text="@string/Recipe_Add"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <include 
+        android:layout_width="wrap_content" 
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_bar_recipe" />
+
+</RelativeLayout>

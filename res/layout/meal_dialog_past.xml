@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_clear"
+    android:layout_width="1000dp"
+    android:layout_height="1000dp"
+     >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    
+    <ScrollView
+        android:id="@+id/ScrlView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="50dp" >
+        
+        	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:text="Past Meals"
+	        android:paddingLeft="20dp"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        />
+	    
+	    <View 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="2dp" 
+	        android:paddingTop="20dp" 
+	        android:background="@color/pressed_red" /> 
+		<View 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="10dp" 
+	        android:background="@color/transparent" /> 	        
+	    
+		<TextView
+                android:id="@+id/nameDateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="@string/meals_past_text1"
+                android:gravity="center"
+                android:textIsSelectable="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />   
+                 
+            <ListView
+        		android:id="@+id/pastListView1"
+        		android:layout_width="wrap_content"
+        		android:layout_height="300dp"
+        		android:divider="@null"
+        		android:dividerHeight="0dp"/>
+            
+            <TextView
+                android:id="@+id/nameDateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:gravity="center"
+                android:text="@string/meals_past_text2"
+                android:textIsSelectable="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" />   
+                 
+            <ListView
+        		android:id="@+id/pastListView2"
+        		android:layout_width="wrap_content"
+        		android:layout_height="300dp"
+        		android:divider="@null"
+        		android:dividerHeight="0dp"/>
+            
+		</LinearLayout>
+    </ScrollView>
+    
+    	 <Button
+	        android:id="@+id/cancelBtn"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:text="Cancel" />
+    </RelativeLayout>
+</FrameLayout>

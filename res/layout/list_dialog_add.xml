@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_clear"
+    android:layout_width="1000dp"
+    android:layout_height="1000dp"
+    android:background="@color/verylightgrey"  >
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="230dp"
+        android:orientation="vertical" >
+
+        <TextView
+	        android:id="@+id/title"
+	        android:layout_width="280dp"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:text="Add Ingredient"
+	        android:paddingLeft="20dp"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        />
+	    
+	    <View 
+	        android:id="@+id/space1"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="2dp" 
+	        android:layout_below="@+id/title"
+	        android:paddingTop="20dp" 
+	        android:background="@color/pressed_red" /> 
+		<View
+		    android:id="@+id/space2"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="10dp" 
+	        android:layout_below="@+id/space1"
+	        android:background="@color/transparent" />	       
+
+        <EditText
+            android:id="@+id/itemEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" 
+            android:layout_below="@+id/space2"/>
+
+        <Spinner
+            android:id="@+id/Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/itemEditText"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            tools:listitem="@android:layout/simple_spinner_item" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/Spinner"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+		    	android:layout_marginTop="5dp"
+		    	android:layout_marginBottom="5dp"
+		    	android:layout_marginLeft="5dp"
+		    	android:layout_centerInParent="true"
+		    	android:background="@drawable/button_custom"
+		    	android:padding="10dp"
+		    	android:textAppearance="@style/CodeFont"
+		    	android:textColor="@color/drkgrey" 
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+	        	android:layout_marginTop="5dp"
+		   		android:layout_marginBottom="5dp"
+		   		android:layout_marginRight="5dp"
+		    	android:layout_centerInParent="true"
+		    	android:background="@drawable/button_custom"
+		    	android:padding="10dp"
+		    	android:textAppearance="@style/CodeFont"  
+		    	android:textColor="@color/drkgrey"               
+                android:text="Add" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

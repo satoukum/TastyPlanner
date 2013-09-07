@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+    android:id="@+id/cartRL"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:background="@color/grey" >
+
+    <TextView
+        android:id="@+id/listTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="List: " />
+
+    <TextView
+        android:id="@+id/cartTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cart: " />
+
+	</RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:textAppearance="@style/CodeFont3"
+        android:text="test"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"/>
+
+</LinearLayout>

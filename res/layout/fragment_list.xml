@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightgrey" >
+
+    <View
+        android:id="@+id/spacing"
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/verylightgrey" />
+
+    <ExpandableListView
+        android:id="@+id/ExpList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/spacing"
+        android:background="@color/verylightgrey"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:groupIndicator="@null"
+        android:paddingBottom="51dp" />
+    
+    <RelativeLayout
+    android:id="@+id/cartRL2"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:layout_above="@+id/bottom_bar_list"
+    android:background="@color/grey" >
+
+    <TextView
+        android:id="@+id/listTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"       
+        android:text="List: " />
+
+    <TextView
+        android:id="@+id/cartTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cart: " />
+
+	</RelativeLayout>
+
+    <include
+        android:id="@+id/bottom_bar_list"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_bar_list" />
+
+</RelativeLayout>

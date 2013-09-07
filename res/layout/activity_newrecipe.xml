@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/verylightgrey"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+	android:focusableInTouchMode="true"  >  
+
+    <ScrollView
+        android:id="@+id/ScrlView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/view1"
+        android:layout_alignParentLeft="true" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        
+            <TextView
+                android:id="@+id/nameTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="@string/NewRecipe_Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+            
+            <RelativeLayout
+    			android:id="@+id/RelativeLayout2"
+    			android:layout_width="fill_parent"
+    			android:layout_height="fill_parent"
+    			android:orientation="vertical"
+    			android:descendantFocusability="beforeDescendants"
+				android:focusableInTouchMode="true"  >
+	
+            <EditText
+                android:id="@+id/editTextX"
+                android:minLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NewRecipe_Name_Hint"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+            
+            <ImageView
+            	android:id="@+id/pinBtn"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentTop="true"
+            	android:layout_alignParentRight="true"
+            	android:background="@null"
+            	android:paddingLeft="15dp"
+            	android:paddingRight="15dp"
+            	android:src="@drawable/icon_camera" />
+            </RelativeLayout>  
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="@string/NewRecipe_Ingredients"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NewRecipe_Ingredients_Hint1"
+                android:ems="10" />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NewRecipe_Ingredients_Hint2"
+                android:ems="10" />
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NewRecipe_Ingredients_Hint3"
+                android:ems="10" />
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NewRecipe_Ingredients_Hint4"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="@string/NewRecipe_Directions"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NewRecipe_Directions_Hint1"
+                android:ems="10" />
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NewRecipe_Directions_Hint2"
+                android:ems="10" />
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NewRecipe_Directions_Hint3"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:text="@string/NewRecipe_PrepareTime"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:minLines="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NewRecipe_PrepareTime_Hint"
+                android:ems="10"
+                android:inputType="textMultiLine" >
+            </EditText>               
+                 
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:background="@color/red"
+                android:text="@string/NewRecipe_Servings"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:minLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NewRecipe_Servings_Hint"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:paddingBottom="50dp" >
+            </EditText>
+            
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:background="@color/red"
+                android:text="@string/NewRecipe_Tags"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:minLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/NewRecipe_Tags_Hint"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:paddingBottom="50dp" >
+            </EditText>
+            
+	</LinearLayout>
+    </ScrollView>
+    
+    <include 
+        android:id="@+id/view1"
+        android:layout_width="wrap_content" 
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/top_bar" /> 
+
+            <include 
+		        android:layout_width="wrap_content" 
+        		android:layout_alignParentBottom="true"
+        		layout="@layout/bottom_bar_newrecipe" />
+    
+</RelativeLayout>

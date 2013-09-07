@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="51dp"
+	android:layout_alignParentBottom="true"
+	android:layout_alignParentLeft="true"
+	android:layout_alignParentRight="true"
+	android:background="@color/verylightgrey">
+
+	<View
+	    android:id="@+id/divider"
+    	android:layout_width="fill_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/grey"
+    	android:layout_alignParentRight="true"
+    	android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_search_dark"
+            android:drawablePadding="1dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/button_custom_red"            
+            android:textAppearance="@style/CodeFont"
+            android:textColor="@color/drkgrey"
+            android:text="@string/Meals_FindRecipe" />
+        
+        <Button
+            android:id="@+id/addBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/addBtn"
+            android:background="@drawable/button_custom"
+            android:drawableLeft="@drawable/icon_edit_small"
+            android:drawablePadding="1dp"
+            android:paddingRight="8dp"
+            android:textAppearance="@style/CodeFont"
+            android:textColor="@color/drkgrey"            
+            android:text="New Recipe" />
+        
+        <Button
+            android:id="@+id/pastBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_custom"
+            android:drawableLeft="@drawable/icon_history_dark3"
+            android:drawablePadding="1dp"
+            android:paddingRight="8dp"
+            android:textAppearance="@style/CodeFont"
+            android:textColor="@color/drkgrey"            
+            android:text="Past" />
+
+    </RelativeLayout>
